@@ -1,0 +1,49 @@
+#rotate{
+width: 200px;
+height: 200px;
+display: block;
+margin: 10px;
+transform: rotate(60deg);
+background:lightblue;
+}
+
+
+#skew {
+width: 200px;
+height: 200px;
+display: block;
+margin: 10px;
+transform:skew(10deg,10deg);
+background: pink;
+}
+
+
+#all {
+width: 200px;
+height: 200px;
+display: block;
+margin: 10px;
+transform: rotateY(120deg);
+background: lightgreen;
+}
+
+
+
+h3{
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+
+
+@keyframes mymove {
+    0%   {top: 0px; background: pink; width: 100px;}
+    100% {top: 200px; background: lightblue; width: 300px;}
+}
+
+#animate{
+    width: 200px;
+    height: 300px;
+    background: pink;
+    position: relative;
+    animation: mymove 0.5s infinite;
+}
